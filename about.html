@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Company</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e3;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 1rem;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .core-values li {
+            margin-bottom: 1rem;
+            list-style: none;
+        }
+
+        .certification {
+            text-align: center;
+            color: #ef4444;
+            margin: 2rem 0;
+        }
+
+        .tea-image {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .management-title {
+            text-align: center;
+            color: #ef4444;
+            margin-bottom: 2rem;
+        }
+
+        .management-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .management-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .read-more {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            border-top: 1px solid #ddd;
+            padding-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer h3 {
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="/placeholder.svg" alt="Company Logo" height="40">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">CSR</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="grid">
+            <div>
+                <h2 class="section-title">Vision</h2>
+                <p>To be a leading global source of excellent tea, building a legacy of sustainability, creativity, and unrivaled quality that enhances the tea-drinking experience for tea lovers worldwide.</p>
+                
+                <h2 class="section-title" style="margin-top: 2rem;">Mission</h2>
+                <p>We aspire to produce great teas in a socially and economically responsible manner, focusing on sustainability, fair trade, and community empowerment to benefit both tea lovers and local communities.</p>
+            </div>
+
+            <div>
+                <h2 class="section-title">Core Values</h2>
+                <ul class="core-values">
+                    <li>• Quality: Commitment to obtaining and creating the finest tea leaves via careful processes to assure consistent high quality</li>
+                    <li>• Community Empowerment: Promoting fair trade practices, investing in their development, and ensuring their well-being in order to support and empower local communities</li>
+                    <li>• Integrity: Maintaining honesty, openness, and ethical business practices in all facets of the organization's operations</li>
+                    <li>• Customer Satisfaction: Meeting the demands of customers by providing great products and experiences that exceed expectations</li>
+                    <li>• Education & Awareness: Promoting tea culture by teaching customers on the origins, benefits, and taste of tea, encouraging responsible usage</li>
+                </ul>
+            </div>
+        </section>
+
+        <p class="certification">
+            The company prides itself with internationally recognized certifications of its operations that include Kenya
+            Bureau of Standards (KEBS), Rainforest Alliance (RA) and Tea Board of Kenya mark of origin.
+        </p>
+
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250204-WA0001.jpg-cVkY4UbjY89y4QQu4uQnrsahaLxnPG.jpeg" alt="Tea Processing" class="tea-image">
+
+        <p class="management-title">
+            Our organization is composed of Non Executive and Hands-on Members known as Top Management
+        </p>
+
+        <div class="management-grid">
+            <div class="management-card">
+                <h3>Mr. Titus K. Kipyap</h3>
+                <p>Board Chair</p>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="management-card">
+                <h3>Bishop Dr. Robert Langat</h3>
+                <p>Director</p>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="management-card">
+                <h3>Mr. Shaun Zambuni</h3>
+                <p>Finance Board Chair</p>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="management-card">
+                <h3>Bishop Silas Yego</h3>
+                <p>Director</p>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="management-card">
+                <h3>Mrs. Eunice J. K. Mai</h3>
+                <p>Director</p>
+                <button class="read-more">Read more</button>
+            </div>
+            <div class="management-card">
+                <h3>Other Members</h3>
+                <p>Top Management</p>
+                <button class="read-more">Read more</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Products</li>
+                    <li>Our Team</li>
+                    <li>Corporate Social Responsibility</li>
+                    <li>Get in Touch</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Why Choose Kaisigu</h3>
+                <ul>
+                    <li>High Quality Leaves</li>
+                    <li>Quality Production Control</li>
+                    <li>Experienced Staff</li>
+                    <li>Friendly Service</li>
+                    <li>Environmentally Friendly</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Popular Products</h3>
+                <ul>
+                    <li>Tangawizi Blended Tea</li>
+                    <li>Classic Tea Packs</li>
+                    <li>Kaisigu Tea Sachets</li>
+                    <li>Loose Tea Leaves</li>
+                    <li>100% Pure Kaisigu Tea</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Departments</h3>
+                <ul>
+                    <li>Quality Control</li>
+                    <li>Sales and Marketing</li>
+                    <li>Production</li>
+                    <li>Customer Care</li>
+                    <li>CSR</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
